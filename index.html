@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>travel_figma_design</title>
+    <script src="https://cdn.tailwindcss.com"></script>     
+    
+</head>
+<body class="bg-gray-900 font-sans">
+    <!-----Home Section-->
+        <div class="mx-auto relative">       
+                <img class="w-full h-auto" src="./images/section1.png" alt="Home page image">             
+                <div>
+                    <!--primary nav bar-->
+                    <div onclick="activatemobilbutton();" id="hamburger_btn"  class="absolute md:hidden top-0 left-0 right-0"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 5.25h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5m-16.5 4.5h16.5"/></svg></div>
+                    <div id="nav_menu" class="absolute hidden top-0 left-0 right-0 md:flex  space-x-20 justify-center items-center font-bold text-white" ><!---nav bar-->
+                        <a class="" href="#">Home</a>
+                        <a class="" href="#">About us</a>
+                        <a class="" href="#">Tours</a>
+                        <a class="" href="#">Gallery</a>
+                        <a class="" href="#">Reviews</a>
+                        <a class="" href="#">Contact</a>
+                    </div>
+                    <!---Center Text-->
+                    <div class="text-white absolute flex-col mt-20  flex  md:justify-center items-center inset-0 h-1/2 md:h-screen">
+                        <h1 class="text-4xl lg:text-9xl font-bold ">Travel Time</h1>
+                        <div>
+                            <p class="text-sm text-center">Lets Travel With us we will start a new adventure together with<br>full of happiness and laughs</p>
+                        </div> 
+                        <button class="bg-green-400 text-white font-bold rounded-lg p-5">Join</button>                  
+                    </div>              
+                
+                </div>
+                       
+         <div >
+                    
+                
+
+        <!-----where to go Section-->
+        <div class="mx-auto">
+           <!-- <img class="w-full h-auto " src="./images/section2.png" alt="Home page image">            -->
+            <div class="bg-[url('images/section2.png')] h-auto  bg-cover">
+                
+                <div class="text-white text-4xl text-center m-8">Where do you want to go ?</div>
+                <div class=" grid grid-cols-1  md:grid-cols-2 lg:grid-cols-4 gap-4 p-10">               
+                    <div class="bg-gray-800 p-8 mx-auto space-y-2 text-white">                
+                        <img src="./images/card1.png">  
+                        <h1 class="text-2xl">Mountain</h1>
+                        <p class="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nam animi quae aut sequi voluptate officia. Mollitia recusandae voluptates ipsam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate incidunt dolor nulla laboriosam, rerum aspernatur praesentium ipsum totam deleniti.                    
+                            <span id="dots">...</span>
+                            <span id="more" class="hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero accusamus ipsum nihil? Eaque veniam eveniet, laborum veritatis voluptatibus labore ut? Facilis suscipit modi voluptate fuga nisi est eaque? Voluptatum soluta blanditiis possimus beatae saepe cum. Ex corrupti animi tenetur at ipsam. Provident consectetur nostrum quae! Atque itaque inventore quaerat!
+                            </span>
+                        </p>
+                        <button onclick="toggleText()" id="readmore_button" class="mt-3 px-5 py-2 bg-gray-500 text-white duration-300 hover:bg-gray-700">Read more</button>                    
+                    </div>
+
+                    <div class="bg-gray-800 p-8 mx-auto space-y-2 text-white">
+                        <img src="./images/card2.png">
+                        <h1 class="text-2xl">Mountain</h1>
+                        <p class="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nam animi quae aut sequi voluptate officia. Mollitia recusandae voluptates ipsam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate incidunt dolor nulla laboriosam, rerum aspernatur praesentium ipsum totam deleniti.                    
+                            <span id="dots">...</span>
+                            <span id="more" class="hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero accusamus ipsum nihil? Eaque veniam eveniet, laborum veritatis voluptatibus labore ut? Facilis suscipit modi voluptate fuga nisi est eaque? Voluptatum soluta blanditiis possimus beatae saepe cum. Ex corrupti animi tenetur at ipsam. Provident consectetur nostrum quae! Atque itaque inventore quaerat!
+                            </span>
+                        </p>
+                        <button onclick="toggleText()" id="readmore_button" class="mt-3 px-5 py-2 bg-gray-500 text-white duration-300 hover:bg-gray-700">Read more</button>                     
+                            
+                    </div>
+                    <div class="bg-gray-800 p-8 mx-auto space-y-2 text-white">
+                        <img src="./images/card3.png"> 
+                        <h1 class="text-2xl">Mountain</h1>
+                        <p class="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nam animi quae aut sequi voluptate officia. Mollitia recusandae voluptates ipsam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate incidunt dolor nulla laboriosam, rerum aspernatur praesentium ipsum totam deleniti.                    
+                            <span id="dots">...</span>
+                            <span id="more" class="hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero accusamus ipsum nihil? Eaque veniam eveniet, laborum veritatis voluptatibus labore ut? Facilis suscipit modi voluptate fuga nisi est eaque? Voluptatum soluta blanditiis possimus beatae saepe cum. Ex corrupti animi tenetur at ipsam. Provident consectetur nostrum quae! Atque itaque inventore quaerat!
+                            </span>
+                        </p>
+                        <button onclick="toggleText()" id="readmore_button" class="mt-3 px-5 py-2 bg-gray-500 text-white duration-300 hover:bg-gray-700">Read more</button>                    
+                    </div>
+                    <div class="bg-gray-800 p-8 mx-auto space-y-2 text-white">
+                        <img src="./images/card4.png"> 
+                        <h1 class="text-2xl">Mountain</h1>
+                        <p class="">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, nam animi quae aut sequi voluptate officia. Mollitia recusandae voluptates ipsam!
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex voluptate incidunt dolor nulla laboriosam, rerum aspernatur praesentium ipsum totam deleniti.                    
+                            <span id="dots">...</span>
+                            <span id="more" class="hidden">
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo libero accusamus ipsum nihil? Eaque veniam eveniet, laborum veritatis voluptatibus labore ut? Facilis suscipit modi voluptate fuga nisi est eaque? Voluptatum soluta blanditiis possimus beatae saepe cum. Ex corrupti animi tenetur at ipsam. Provident consectetur nostrum quae! Atque itaque inventore quaerat!
+                            </span>
+                        </p>
+                        <button onclick="toggleText()" id="readmore_button" class="mt-3 px-5 py-2 bg-gray-500 text-white duration-300 hover:bg-gray-700">Read more</button>                    
+                    </div>
+                </div>
+            </div>
+               
+        </div>
+
+
+
+
+
+        <!-----About Us Section-->
+        <div class="mx-auto relative">
+            <img class="w-full h-auto" src="./images/section3.png" alt="Home page image">             
+            <div class=" flex flex-col  absolute top-20 text-center left-0 right-0 flex w-full md:w-auto">
+                <h1 class="text-white text-2xl md:text-black">About Us</h1>
+                <p class="text center text-white md:text-black">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis atque amet odit porro quod aliquam hic harum modi libero mollitia sit, fuga vero cum magni quo deleniti ab adipisci. Sed optio maxime quis a officiis. Magni enim nam ratione tempora, tempore accusamus maxime atque praesentium aliquam necessitatibus fugit commodi. Ipsa!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati odio ab explicabo error aliquam suscipit quae voluptas in veniam vel!
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem culpa inventore ea suscipit praesentium tempora ipsa, consequuntur repellendus illum?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. In fugiat sequi quia, atque delectus blanditiis ullam dolorum est labore ea?
+                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Accusantium eligendi, tempore possimus culpa consequatur quam magnam esse perspiciatis exercitationem fugit.
+                </p>
+            </div>
+        </div>
+
+    
+</body>
+
+<script>
+    function toggletext(){
+        alert('read more')
+        var dots =document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var button = document.getElementById("readmore_button");
+        if (dots.classList.contains("hidden")) {
+            // Show the dots
+            dots.classList.remove("hidden");
+
+            // Hide the more text
+            moreText.classList.add("hidden");
+
+            // change text of the button
+            button.innerHTML = "Read more";
+        } else {
+            // Hide the dots
+            dots.classList.add("hidden");
+
+            // hide the more text
+            moreText.classList.remove("hidden");
+
+            // change text of the button
+            button.innerHTML = "Read less";
+        }
+
+    }
+
+
+    function activatemobilbutton(){   
+    
+	const btn = document.querySelector(".hamburger_btn");
+	const menu = document.querySelector(".nav_menu");
+        alert('inside function')
+      
+    }
+    
+</script>
+</html>
